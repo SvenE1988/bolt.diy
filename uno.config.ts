@@ -241,6 +241,7 @@ export default defineConfig({
       warn: true,
       collections: {
         ...customIconCollection,
+        ph: () => import('@iconify-json/ph/icons.json').then((i) => i.default),
       },
       unit: 'em',
     }),
@@ -257,9 +258,9 @@ export default defineConfig({
  *
  * ```
  * {
- *   '1': '#FFFFFF03',
- *   '2': '#FFFFFF05',
- *   '3': '#FFFFFF08',
+ * '1': '#FFFFFF03',
+ * '2': '#FFFFFF05',
+ * '3': '#FFFFFF08',
  * }
  * ```
  */
